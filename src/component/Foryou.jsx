@@ -1,6 +1,9 @@
+import '../App.css'
+import RowItems from './RowItems'
 
 
 const Foryou = () => {
+
     return (
         <>
             {/* here is crousel section */}
@@ -21,20 +24,6 @@ const Foryou = () => {
                                     <p>Some representative placeholder content for the first slide.</p>
                                 </div>
                             </div>
-                            <div className="carousel-item">
-                                <img src="https://plus.unsplash.com/premium_photo-1685145255405-05ffbe7ce81b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60" className="d-block w-100" alt="..." />
-                                <div className="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
-                                </div>
-                            </div>
-                            <div className="carousel-item">
-                                <img src="https://plus.unsplash.com/premium_photo-1685145255405-05ffbe7ce81b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60" className="d-block w-100" alt="..." />
-                                <div className="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
-                                </div>
-                            </div>
                         </div>
                         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -48,6 +37,31 @@ const Foryou = () => {
                 </div>
             </div>
 
+            {/* add row  */}
+            <div className='row1'>
+            <h4 className="bg-dark text-white">Latest and Tranding</h4>
+                <div>
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                    <RowItems />
+                </div>
+            </div >
         </>
     )
 }
