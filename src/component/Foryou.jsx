@@ -52,14 +52,7 @@ const Foryou = () => {
                     <RowItems />
                     <RowItems />
                     <RowItems />
-                    <RowItems />
-                    <RowItems />
-                    <RowItems />
-                    <RowItems />
-                    <RowItems />
-                    <RowItems />
-                    <RowItems />
-                    <RowItems />
+                    
                 </div>
             </div >
         </>

@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(39, 38, 38);
+}
 #brandLogo {
     width: 7rem !important;
     height: auto !important;
@@ -7,10 +10,16 @@
     color: aliceblue !important;
 }
 
+.row1 {
+    margin-top: .3rem !important;
+    margin-bottom: .5rem !important;
+}
+
 .row1>div {
     display: flex;
     overflow-x: auto;
-    padding: 3px;
+    padding: 1px !important;
+    margin-top: -5px !important;
     /* justify-content: space-between; */
 }
 
@@ -38,6 +47,10 @@
     border-radius: 10px;
 }
 
+.playlink:hover {
+    background-color: rgb(238, 10, 74);
+}
+
 .card1 {
     box-shadow: 3px 3px 5px gray;
 }
@@ -45,4 +58,11 @@
 .card1:hover {
     transform: translateY(-6px) scale(1.01);
     transition: transform .5s;
+}
+
+/* design for navbar */
+.nave-item:hover {
+    border: 1px solid white !important;
+    box-shadow: 2px 2px 2px white !important;
+    border-radius: 10px !important;
 }
