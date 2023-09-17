@@ -19,51 +19,9 @@ body{
 .row1>div {
     display: flex;
     overflow-x: auto;
-    padding: 1px !important;
-    margin-top: -5px !important;
-    /* justify-content: space-between; */
 }
 
 /*Hide Scrollbars But Keep Functionality */
 .row1>div::-webkit-scrollbar {
     display: none;
-}
-
-#cardImage {
-    width: 9rem;
-    height: auto;
-    padding: 0 0.3rem;
-    cursor: pointer;
-}
-
-.card1>a {
-    box-sizing: border-box;
-    box-shadow: 2px 2px 3px gray;
-    /* border: 1px solid; */
-    background-color: rgb(165, 55, 55);
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-    margin-left: 5px;
-    border-radius: 10px;
-}
-
-.playlink:hover {
-    background-color: rgb(238, 10, 74);
-}
-
-.card1 {
-    box-shadow: 3px 3px 5px gray;
-}
-
-.card1:hover {
-    transform: translateY(-6px) scale(1.01);
-    transition: transform .5s;
-}
-
-/* design for navbar */
-.nave-item:hover {
-    border: 1px solid white !important;
-    box-shadow: 2px 2px 2px white !important;
-    border-radius: 10px !important;
 }

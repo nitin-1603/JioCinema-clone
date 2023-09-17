@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
 import '../App.css'
-import RowItems from './RowItems'
+// import RowItems from './RowItems'
+import SecondCard from './SecondCard';
 
 
-const Foryou = (prop) => {
+const Foryou = () => {
     const [mData, setMdata] = useState([]);
     useEffect(() => {
         let apicall = async () => {
-            let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=7a3c4af06a979a783478c392fe50b96f";
+            let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=7a3c4af06a979a783478c392fe50b96f&pageSize=7";
             let data = await fetch(url);
             let parsedData = await data.json();
             let results = parsedData.results;
@@ -53,12 +54,12 @@ const Foryou = (prop) => {
             <div className='row1'>
                 <h4 className="bg-dark text-white">Latest and Tranding</h4>
                 <div>
-                    {mData.map((items) => {
-                        return <div key={items.id}>
-                            <RowItems posterPath={items.poster_path} title={items.title}/>
-                        </div>
-                    })
+                    {
+                        mData.map((items) => {
+                            return <div key={items.id}>
+                                <SecondCard title={items.title} /> </div>
 
+                        })
                     }
                 </div>
             </div >
