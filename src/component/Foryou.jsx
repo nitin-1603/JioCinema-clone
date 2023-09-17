@@ -8,13 +8,14 @@ const Foryou = () => {
     const [mData, setMdata] = useState([]);
     useEffect(() => {
         let apicall = async () => {
-            let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=7a3c4af06a979a783478c392fe50b96f&pageSize=7";
+            let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=5caf8c9432c960a3aa1d97e95cd24463";
             let data = await fetch(url);
             let parsedData = await data.json();
             let results = parsedData.results;
             setMdata(results);
         }
         apicall();
+
     }, [])
 
     return (
