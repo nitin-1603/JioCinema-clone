@@ -1,7 +1,8 @@
-body{
+body {
     background-color: rgb(39, 38, 38);
     color: white;
 }
+
 #brandLogo {
     width: 7rem !important;
     height: auto !important;
@@ -19,9 +20,25 @@ body{
 .row1>div {
     display: flex;
     overflow-x: auto;
+    padding: 5px;
+    cursor: pointer !important;
 }
 
 /*Hide Scrollbars But Keep Functionality */
 .row1>div::-webkit-scrollbar {
     display: none;
+}
+
+.card {
+    box-shadow: 0px 0px 4px white;
+}
+
+.card:hover {
+    transform: scaleY(1.1) translate(5px) !important;
+    /* cursor: pointer !important; */
+}
+
+.card-image-height {
+    width: 100%;
+    height: 100%;
 }

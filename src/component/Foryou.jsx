@@ -58,7 +58,19 @@ const Foryou = () => {
                     {
                         mData.map((items) => {
                             return <div key={items.id}>
-                                <SecondCard title={items.title} /> </div>
+                                <SecondCard posterPath={`https://image.tmdb.org/t/p/w500${items.poster_path}`} title={items.title} /> </div>
+
+                        })
+                    }
+                </div>
+            </div >
+            <div className='row1'>
+                <h4 className="bg-dark text-white">Latest and Tranding</h4>
+                <div>
+                    {
+                        mData.map((items) => {
+                            return <div key={items.id}>
+                                <SecondCard posterPath={`https://image.tmdb.org/t/p/w500${items.poster_path}`} title={items.title} /> </div>
 
                         })
                     }
