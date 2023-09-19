@@ -17,6 +17,10 @@ body {
     margin-bottom: .5rem !important;
 }
 
+.row1 > h4 {
+    margin-left: 3rem;
+}
+
 .row1>div {
     display: flex;
     overflow-x: auto;
@@ -31,10 +35,11 @@ body {
 
 .card {
     box-shadow: 0px 0px 4px white;
+    cursor: pointer;
 }
 
 .card:hover {
-    transform: scaleY(1.1) translate(5px) !important;
+    transform: scaleY(1.04) translate(1px) !important;
     /* cursor: pointer !important; */
 }
 
