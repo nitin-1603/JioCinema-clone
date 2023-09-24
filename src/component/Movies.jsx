@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import '../App.css'
 // import RowItems from './RowItems'
 import SecondCard from './SecondCard';
-import Carousel from './Carousel';
 
 
 const Foryou = () => {
@@ -67,14 +66,13 @@ const Foryou = () => {
         <>
             {/* here is crousel section  now playing*/}
 
-            <Carousel />
 
-            {/* add row for top rated movies */}
+            {/* add row for upcoming movies */}
             <div className='row1'>
-                <h4 className="bg-dark text-white">Top Rated Movies</h4>
+                <h4 className="bg-dark text-white">Upcoming Movies</h4>
                 <div>
                     {
-                        mRated.map((items) => {
+                        mUpcoming.map((items) => {
                             return <div key={items.id}>
                                 <SecondCard posterPath={`https://image.tmdb.org/t/p/w500${items.poster_path}`} title={items.title} /> </div>
 
@@ -82,6 +80,7 @@ const Foryou = () => {
                     }
                 </div>
             </div >
+
 
             {/* add row for popular movies */}
             <div className='row1'>
@@ -97,12 +96,13 @@ const Foryou = () => {
                 </div>
             </div >
 
-            {/* add row for upcoming movies */}
+
+            {/* add row for top rated movies */}
             <div className='row1'>
-                <h4 className="bg-dark text-white">Upcoming Movies</h4>
+                <h4 className="bg-dark text-white">Top Rated Movies</h4>
                 <div>
                     {
-                        mUpcoming.map((items) => {
+                        mRated.map((items) => {
                             return <div key={items.id}>
                                 <SecondCard posterPath={`https://image.tmdb.org/t/p/w500${items.poster_path}`} title={items.title} /> </div>
 
@@ -110,6 +110,7 @@ const Foryou = () => {
                     }
                 </div>
             </div >
+
         </>
     )
 }
