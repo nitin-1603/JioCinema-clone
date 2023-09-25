@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import '../App.css'
 
 const Navbar = () => {
+    
     return (
         <>
             <ul className="nav bg-dark">
@@ -26,9 +27,10 @@ const Navbar = () => {
                 <li className="nav-item ">
                     <NavLink className="nav-link " to="/news">News</NavLink>
                 </li>
-                
-                <li className="nav-item ">
-                    <button className='nav-link bg-dark'>Login</button>
+
+                <li className="nav-item ms-auto">
+                <NavLink className="nav-link " to="/login">Login</NavLink>
+                    {/* <button onClick={() => { navigate('/login') }} className='nav-link bg-dark'>Login</button> */}
                 </li>
 
             </ul>

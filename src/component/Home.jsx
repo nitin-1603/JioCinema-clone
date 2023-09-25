@@ -4,6 +4,7 @@ import Foryou from "./Foryou";
 import TvShows from "./TvShows";
 import Movies from './Movies'
 import Error404 from "./Error404";
+import Login from "./Login";
 
 
 
@@ -23,7 +24,7 @@ const Home = () => {
                     <Route path='/movies' element={<Movies />} ></Route>
                     <Route path='/sports' element={<Error404 sport='Sports' h1Error='h1Error' />} ></Route>
                     <Route path='/news' element={<Error404 news='News' h1Error='h1Error' />} ></Route>
-                    {/* <Route path='/login' element={<Login />} ></Route> */}
+                    <Route path='/login' element={<Login />} ></Route>
 
                 </Routes>
             </BrowserRouter>
