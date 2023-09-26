@@ -71,7 +71,11 @@ const Foryou = () => {
 
             {/* add row for top rated movies */}
             <div className='row1'>
+                <span>
                 <h4 className="bg-dark text-white">Top Rated Movies</h4>
+                <button className='btn btn-dark'>Show All</button>
+                </span>
+                            
                 <div>
                     {
                         mRated.map((items) => {
@@ -85,7 +89,11 @@ const Foryou = () => {
 
             {/* add row for popular movies */}
             <div className='row1'>
+            <span>
                 <h4 className="bg-dark text-white">Popular Movies</h4>
+                <button className='btn btn-dark'>Show All</button>
+                </span>
+                
                 <div>
                     {
                         mPopular.map((items) => {
@@ -99,7 +107,11 @@ const Foryou = () => {
 
             {/* add row for upcoming movies */}
             <div className='row1'>
-                <h4 className="bg-dark text-white">Upcoming Movies</h4>
+            <span>
+                    <h4 className="bg-dark text-white">Upcoming Movies</h4>
+                    <button className='btn btn-dark'>Show All</button>
+                </span>
+               
                 <div>
                     {
                         mUpcoming.map((items) => {

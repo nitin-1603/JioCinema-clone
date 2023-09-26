@@ -57,12 +57,16 @@ const TvShows = () => {
 
   return (
     <>
-    {/* carousel */}
-    <CarouselForTvShow />
+      {/* carousel */}
+      <CarouselForTvShow />
 
       {/* row for popular tv shows */}
       <div className='row1'>
-        <h4 className="bg-dark text-white">Popular Tv Shows</h4>
+        <span>
+          <h4 className="bg-dark text-white">Popular Tv Shows</h4>
+          <button className='btn btn-dark'>Show All</button>
+        </span>
+
         <div>
           {
             tvPopular.map((items) => {
@@ -76,7 +80,11 @@ const TvShows = () => {
 
       {/* row for Top Rated tv shows */}
       <div className='row1'>
-        <h4 className="bg-dark text-white">Top Rated Tv Shows</h4>
+        <span>
+          <h4 className="bg-dark text-white">Top Rated Tv Shows</h4>
+          <button className='btn btn-dark'>Show All</button>
+        </span>
+
         <div>
           {
             tvTopRated.map((items) => {
@@ -91,7 +99,11 @@ const TvShows = () => {
 
       {/* row for airing today tv shows */}
       <div className='row1'>
-        <h4 className="bg-dark text-white">Airing Today</h4>
+        <span>
+          <h4 className="bg-dark text-white">Airing Today</h4>
+          <button className='btn btn-dark'>Show All</button>
+        </span>
+
         <div>
           {
             tvLatest.map((items) => {
@@ -105,7 +117,11 @@ const TvShows = () => {
 
       {/* row for On airt tv shows */}
       <div className='row1'>
-        <h4 className="bg-dark text-white">On air Tv Show</h4>
+        <span>
+          <h4 className="bg-dark text-white">On air Tv Show</h4>
+          <button className='btn btn-dark'>Show All</button>
+        </span>
+
         <div>
           {
             tvOntheAir.map((items) => {
@@ -121,4 +137,4 @@ const TvShows = () => {
   )
 }
 
-export default TvShows
+export default TvShows;

@@ -26,7 +26,7 @@ ul>li {
 }
 
 .nav-link {
-    color: white !important;
+    color: white ;
     border-radius: 10px;
 }
 
@@ -37,8 +37,10 @@ ul>li {
     margin-bottom: .5rem !important;
 }
 
-.row1>h4 {
-    margin-left: 3rem;
+.row1>span {
+   display: flex;
+   justify-content:space-between;
+   margin: 0px 15px;
 }
 
 .row1>div {
